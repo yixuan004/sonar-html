@@ -1,0 +1,20 @@
+<h2>Why is this an issue?</h2>
+<p>
+    should not use:
+    attr("disabled", true)/attr("disabled", false)/attr("disabled", "disabled")/attr("disabled")
+    attr("checked", true)/attr("checked", false)/attr("checked", "checked")/attr("checked")
+</p>
+<p>
+    use prop instead of attr
+</p>
+<h3>Noncompliant code example</h3>
+<pre>
+    attr("disabled", true)/attr("disabled", false)/attr("disabled", "disabled")/attr("disabled")
+    attr("checked", true)/attr("checked", false)/attr("checked", "checked")/attr("checked")
+</pre>
+<h3>Compliant solution</h3>
+<pre>
+    prop("disabled", true)/prop("disabled", false)/prop("disabled", "disabled")/prop("disabled")
+    prop("checked", true)/prop("checked", false)/prop("checked", "checked")/prop("checked")
+</pre>
+

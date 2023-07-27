@@ -1,0 +1,17 @@
+{
+  "title": "ABC_CUSTOM: should not use [(${var1})] or th:utext fetch value",
+  "type": "BUG",
+  "status": "ready",
+  "remediation": {
+    "func": "Constant\/Issue",
+    "constantCost": "5min"
+  },
+  "tags": [
+    "abc-custom"
+  ],
+  "defaultSeverity": "Major",
+  "ruleSpecification": "ABC_CUSTOM",
+  "sqKey": "FetchValueBracketUtextCheck",
+  "scope": "Main",
+  "quickfix": "unknown"
+}

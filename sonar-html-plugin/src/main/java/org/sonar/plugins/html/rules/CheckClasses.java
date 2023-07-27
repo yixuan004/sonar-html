@@ -30,6 +30,8 @@ import org.sonar.plugins.html.checks.comments.AvoidCommentedOutCodeCheck;
 import org.sonar.plugins.html.checks.comments.AvoidHtmlCommentCheck;
 import org.sonar.plugins.html.checks.comments.FixmeCommentCheck;
 import org.sonar.plugins.html.checks.comments.TodoCommentCheck;
+import org.sonar.plugins.html.checks.custom.AttrDisabledCheckedCheck;
+import org.sonar.plugins.html.checks.custom.FetchValueBracketUtextCheck;
 import org.sonar.plugins.html.checks.dependencies.DynamicJspIncludeCheck;
 import org.sonar.plugins.html.checks.dependencies.IllegalNamespaceCheck;
 import org.sonar.plugins.html.checks.dependencies.IllegalTagLibsCheck;
@@ -151,7 +153,9 @@ public final class CheckClasses {
     ObjectWithAlternativeContentCheck.class,
     IndistinguishableSimilarElementsCheck.class,
     TableHeaderReferenceCheck.class,
-    ResourceIntegrityCheck.class
+    ResourceIntegrityCheck.class,
+    AttrDisabledCheckedCheck.class,
+    FetchValueBracketUtextCheck.class
   );
 
   private CheckClasses() {

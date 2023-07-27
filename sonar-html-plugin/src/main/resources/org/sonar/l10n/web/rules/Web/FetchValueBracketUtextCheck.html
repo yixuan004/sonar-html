@@ -1,0 +1,15 @@
+<h2>Why is this an issue?</h2>
+<p>should not use [(${var1})] or th:utext fetch value</p>
+<p>use [[${var1}]] instead</p>
+
+</p>
+<h3>Noncompliant code example</h3>
+<pre>
+    [(${var1})]
+    th:utext
+</pre>
+<h3>Compliant solution</h3>
+<pre>
+    [[${var1}]]
+</pre>
+

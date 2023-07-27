@@ -1,0 +1,17 @@
+{
+  "title": "ABC_CUSTOM: should use prop(...) replace attr(...)",
+  "type": "BUG",
+  "status": "ready",
+  "remediation": {
+    "func": "Constant\/Issue",
+    "constantCost": "5min"
+  },
+  "tags": [
+    "abc-custom"
+  ],
+  "defaultSeverity": "Major",
+  "ruleSpecification": "ABC_CUSTOM",
+  "sqKey": "AttrDisabledCheckedCheck",
+  "scope": "Main",
+  "quickfix": "unknown"
+}

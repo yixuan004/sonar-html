@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>表单页面</title>
+</head>
+<body>
+<h1>欢迎来到表单页面</h1>
+<p>请填写以下信息：</p>
+
+<form action="/submit" method="post">
+    <label for="name">姓名：</label>
+    <input type="text" id="name" name="name" required><br>
+
+    <label for="email">邮箱：</label>
+    <input type="email" id="email" name="email" required><br>
+
+    <label for="age">年龄：</label>
+    <input type="number" id="age" name="age" required><br>
+
+    <label for="country">国家：</label>
+    <select id="country" name="country" required>
+        <option value="">请选择</option>
+        <option value="中国">中国</option>
+        <option value="美国">美国</option>
+        <option value="日本">日本</option>
+        <option value="其他">其他</option>
+    </select><br>
+
+    <label for="message">留言：</label><br>
+    <textarea id="message" name="message" rows="4" cols="30" required></textarea><br>
+
+    <label for="subscribe">订阅邮件：</label>
+    <input type="checkbox" id="subscribe" name="subscribe"><br>
+
+    <input type="submit" value="提交" th:utext="hello">
+    <input type="reset" value="重置">
+</form>
+
+<button id="myButton">点击我</button>
+<script>
+    // 获取按钮元素
+    var buttonElement = document.getElementById("myButton");
+
+    // 设置按钮的属性
+    buttonElement.setAttribute("class", "my-button-class");
+    buttonElement.setAttribute("style", "background-color: blue; color: white;");
+    buttonElement.setAttribute("data-custom-attribute", "Hello, I'm a custom attribute!");
+
+    // 添加点击事件处理程序
+    buttonElement.addEventListener("click", function() {
+        alert("按钮被点击了！");
+    });
+
+    [(${hello world})]
+</script>
+</body>
+</html>
